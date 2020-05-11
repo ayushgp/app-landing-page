@@ -1,0 +1,110 @@
+#navbarSupportedContent {
+  font-size: 85%;
+}
+
+.carousel-item {
+  background: grey;
+}
+
+.caption-img {
+  opacity: 0.6;
+}
+
+.dropdown-item {
+  font-size: 80%;
+}
+
+.cover-img {
+  max-height: 400px;
+}
+
+.product-img {
+  min-height: 400px;
+  max-height: 400px;
+}
+
+.site-title {
+  background-color: rgb(35, 93, 152);
+  color: white;
+  margin: 0;
+  font-size: 68%;
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .site-title {
+    font-size: 100%;
+  }
+}
+
+.product-table tr:nth-child(odd) {
+  background-color: rgb(35, 93, 152);
+  color: white;
+}
+.product-table tr:nth-child(even) {
+  background-color: rgb(192, 210, 226);
+}
+
+td.product-cell {
+  padding: 2px 7px;
+  border-top: 7px solid white;
+}
+
+.product-title {
+  color: rgb(35, 93, 152);
+}
+
+.product-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+  transform: scale(1.02, 1.02);
+}
+
+.product-card {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.03s;
+}
+
+.navbar {
+  box-shadow: 0 4px 6px -5px gray;
+}
+
+.site-footer {
+  background-color: rgb(35, 93, 152);
+  color: whitesmoke;
+}
+
+.site-footer a {
+  color: lightblue;
+}
+
+.client-img {
+  max-height: 80px;
+  object-fit: contain;
+  justify-content: normal;
+}
+
+.client-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.client-name {
+  font-size: 75%;
+}
+
+.divider {
+  width: 70px;
+  background-color: rgb(35, 93, 152);
+  height: 1.5px;
+  border-radius: 20%;
+  margin-top: 0px;
+}
+
+.navbar-toggler {
+  border: 0px;
+}
+
+.nav-item {
+  font-size: 150%;
+}
