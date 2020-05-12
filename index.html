@@ -24,7 +24,6 @@ title: Home
     </div>
   </div>
 </div>
-<!-- <img src="assets/header-wave.svg" alt="" /> -->
 <div class="bottom-shadow">
   <div class="container mt-4 mb-2 p-3">
     <h3 class="mb-4 text-center font-weight-light feature-head" id="subscribe">
@@ -33,7 +32,12 @@ title: Home
     <div class="row">
       <div class="col-md-2"></div>
       <div class="col-md-8">
-        <form action="">
+        <form
+          action="https://tinyletter.com/ayushgp"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://tinyletter.com/ayushgp', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+        >
           <div class="row">
             <div class="col-sm-9">
               <input
@@ -41,10 +45,15 @@ title: Home
                 class="form-control form-control-lg"
                 required
                 placeholder="johndoe@gmail.com"
+                name="email"
+                id="tlemail"
               />
             </div>
             <div class="col-sm-3">
-              <button class="btn btn-primary btn-lg w-100">Subscribe!</button>
+              <!-- <input type="hidden" value="1" name="embed" /> -->
+              <button type="submit" class="btn btn-primary btn-lg w-100">
+                Subscribe!
+              </button>
             </div>
           </div>
         </form>
@@ -205,7 +214,12 @@ title: Home
     <div class="row">
       <div class="col-md-2"></div>
       <div class="col-md-8">
-        <form action="">
+        <form
+          action="https://tinyletter.com/ayushgp"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://tinyletter.com/ayushgp', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+        >
           <div class="row">
             <div class="col-sm-9">
               <input
@@ -213,10 +227,15 @@ title: Home
                 class="form-control form-control-lg"
                 required
                 placeholder="johndoe@gmail.com"
+                name="email"
+                id="tlemail"
               />
             </div>
             <div class="col-sm-3">
-              <button class="btn btn-primary btn-lg w-100">Subscribe!</button>
+              <!-- <input type="hidden" value="1" name="embed" /> -->
+              <button type="submit" class="btn btn-primary btn-lg w-100">
+                Subscribe!
+              </button>
             </div>
           </div>
         </form>
