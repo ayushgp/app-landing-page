@@ -6,11 +6,11 @@ title: Home
 <div class="hero text-muted">
   <div class="row">
     <div class="col-md-5 m-auto">
-      <h1
+      <h2
         class="display-2 text-center text-light section-head font-weight-bold"
       >
         Muneem
-      </h1>
+      </h2>
       <h5 class="text-center font-weight-light">
         Your one stop shop for all your quotations and sale needs!
       </h5>
@@ -26,11 +26,11 @@ title: Home
 </div>
 <!-- <img src="assets/header-wave.svg" alt="" /> -->
 <div class="bottom-shadow">
-  <div class="container mb-2 pb-3">
-    <h1 class="mb-3 text-center font-weight-light feature-head" id="subscribe">
+  <div class="container mt-4 mb-2 p-3">
+    <h2 class="mb-4 text-center font-weight-light feature-head" id="subscribe">
       Get Notified When We Launch!
-    </h1>
-    <div class="row pb-5">
+    </h2>
+    <div class="row">
       <div class="col-md-2"></div>
       <div class="col-md-8">
         <form action="">
@@ -53,15 +53,14 @@ title: Home
     </div>
   </div>
 </div>
-
 <div class="bottom-shadow feature-container">
   <div class="container">
-    <h1
-      class="mt-4 pt-3 text-center font-weight-light display-3 section-head"
+    <h2
+      class="pt-5 text-center font-weight-light display-4 section-head"
       id="features"
     >
       Features
-    </h1>
+    </h2>
     <hr class="section-underline" />
     <div class="row m-2">
       <div class="col-md-4 text-center">
@@ -72,9 +71,9 @@ title: Home
         />
       </div>
       <div class="col-md-8 pl-md-5 text-center m-auto">
-        <h1 class="font-weight-bold feature-head">
+        <h2 class="font-weight-bold feature-head">
           Create Beautiful Documents
-        </h1>
+        </h2>
         <h5 class="font-weight-lighter">
           Create beautiful quotations, estimates and invoices, and mail them
           directly to your clients!
@@ -84,9 +83,9 @@ title: Home
     <hr />
     <div class="row m-2">
       <div class="col-md-8 pr-md-5 text-center m-auto">
-        <h1 class="font-weight-bold feature-head">
+        <h2 class="font-weight-bold feature-head">
           Information on your fingertips
-        </h1>
+        </h2>
         <h5 class="font-weight-lighter">
           Using the mobile website and apps you can create and send all your
           documents, track your sales and more on the go!
@@ -110,9 +109,9 @@ title: Home
         />
       </div>
       <div class="col-md-8 pl-md-5 text-center m-auto">
-        <h1 class="font-weight-bold feature-head">
+        <h2 class="font-weight-bold feature-head">
           Dashboards to track your money
-        </h1>
+        </h2>
         <h5 class="font-weight-lighter">
           Carefully crafted dashboards to give you insights about your business
           and communication!
@@ -121,31 +120,113 @@ title: Home
     </div>
   </div>
 </div>
-
 <div class="bottom-shadow">
   <div class="container">
-    <h1
-      class="mt-5 mb-3 text-center font-weight-light display-3 section-head"
+    <h2
+      class="mt-4 mb-1 text-center font-weight-light display-4 section-head"
       id="pricing"
     >
       Pricing
-    </h1>
+    </h2>
     <hr class="section-underline" />
-    <h5 class="font-weight-lighter mb-5">
+    <h5 class="font-weight-lighter mb-3 text-center">
       Muneem is free to try until we <b>officially launch</b>. You can read more
       about our pricing structure on the blog.
     </h5>
+    <!-- <div class="row text-center">
+      <div class="col-md-4 rounded">
+        <div class="card h-100">
+          <h4 class="feature-head">Free</h4>
+          <p class="display-4">₹0</p>
+          <p>Feature 1</p>
+          <p>feature 2</p>
+          <p>feature 3</p>
+        </div>
+      </div>
+      <div class="col-md-4 rounded">
+        <div class="card h-100">
+          <h4 class="feature-head">Small Business</h4>
+          <p class="display-4">₹350</p>
+          <p>Feature 1</p>
+          <p>feature 2</p>
+          <p>feature 3</p>
+        </div>
+      </div>
+      <div class="col-md-4 rounded">
+        <div class="card h-100">
+          <h4 class="feature-head">Large Business</h4>
+          <h1 class="display-4">
+            <button class="btn btn-outline-success">Contact Us</button>
+          </h1>
+          <p>All features of Small Business plus:</p>
+          <p>20 Users</p>
+          <p>Admin Dashboard</p>
+        </div>
+      </div> -->
+    <!-- </div> -->
   </div>
 </div>
 
-<div class="bottom-shadow">
-  <div class="container">
-    <h1
-      class="mt-5 mb-3 text-center font-weight-light display-3 section-head"
+<div class="bottom-shadow feature-container">
+  <div class="container pb-4">
+    <h2
+      class="mt-5 pt-3 pb-3 mb-1 text-center font-weight-light display-4 section-head"
       id="blog"
     >
       Blog
-    </h1>
-    // Add blog material here.
+    </h2>
+    <hr class="section-underline" />
+    <div class="posts row">
+      {% for post in site.posts %}
+      <div class="col-md-4 mb-4">
+        <div class="card shadow rounded p-3 h-100">
+          <article class="post h-100">
+            <h3 class="mb-4">
+              <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}"
+                >{{ post.title }}</a
+              >
+            </h3>
+            <div class="entry mb-4">{{ post.excerpt }}</div>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more"
+              >Read More</a
+            >
+          </article>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <h5 class="text-center">
+      <a class="text-dark feature-head pb-4" href="/blog"
+        >View all blog posts</a
+      >
+    </h5>
+  </div>
+</div>
+<div class="bottom-shadow">
+  <div class="container mt-4 mb-2 p-3">
+    <h2 class="mb-4 text-center font-weight-light feature-head" id="subscribe">
+      Get Notified When We Launch!
+    </h2>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <form action="">
+          <div class="row">
+            <div class="col-sm-9">
+              <input
+                type="email"
+                class="form-control form-control-lg"
+                required
+                placeholder="johndoe@gmail.com"
+              />
+            </div>
+            <div class="col-sm-3">
+              <button class="btn btn-primary btn-lg w-100">Subscribe!</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
   </div>
 </div>

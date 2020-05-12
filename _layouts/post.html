@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include header.html %}
-  <link rel="stylesheet" href="css/style.css" />
-
-  <body class="bg-light">
-    {% include navbar.html %} {{ content }} {% include footer.html %}
+  <link rel="stylesheet" href="../../../../css/style.css" />
+  <body style="background-color: #f1faee;">
+    {% include navbar.html %}
+    <div class="container pt-3 pb-2 post-container">
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+    </div>
+    {% include footer.html %}
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
