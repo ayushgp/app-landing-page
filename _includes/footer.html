@@ -66,7 +66,14 @@
     </div>
   </div>
 </footer>
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<script>
+  if (
+    window.location.host.indexOf("muneemapp") > -1 &&
+    window.location.protocol != "https:"
+  ) {
+    window.location.protocol = "https:";
+  }
+</script>
 <script
   async
   src="https://www.googletagmanager.com/gtag/js?id=UA-71807008-4"
